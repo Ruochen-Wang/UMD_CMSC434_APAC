@@ -1,5 +1,5 @@
 <Button
-android:id="@+id/angry_btn"
+android:id="@+id/activity_btn"
 
 android:text="< [change this]"
 android:textColor="#FF961F"
