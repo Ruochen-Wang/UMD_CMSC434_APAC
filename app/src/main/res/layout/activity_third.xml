@@ -2,15 +2,216 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="10dp"
-    android:fillViewport="false">
+    android:fillViewport="false"
+    android:background="#ff002547">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-        
 
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="50dp"
+            android:textColor="#ffffff"
+            android:autofillHints="@string/prompt_name"
+            android:hint="@string/prompt_name"
+            android:textColorHint="#ffffff"
+            android:inputType="textShortMessage"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+        android:id="@+id/age_text"
+        android:layout_width="225dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:text="Age:"
+        android:textColor="#F3DEA7"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/gender_text"
+            android:layout_width="225dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="20dp"
+            android:text="Gender:"
+            android:textColor="#F3DEA7"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/age" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="243dp"
+            android:layout_height="120dp"
+            tools:layout_editor_absoluteX="61dp"
+            tools:layout_editor_absoluteY="489dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gender_text">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="#ffffff"/>
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="#ffffff"/>
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:textColor="#ffffff"/>
+
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prefer Not to Say"
+                android:textColor="#ffffff"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/student_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Are you a student?"
+            android:textColor="#F3DEA7"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textColor="#ffffff"/>
+
+
+        <TextView
+            android:id="@+id/conditions_text"
+            android:layout_width="225dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="20dp"
+            android:text="Sleep Conditions:"
+            android:textColor="#F3DEA7"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/age" />
+
+            <CheckBox
+                android:id="@+id/check1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Snoring"
+                android:textColor="#ffffff"/>
+
+            <CheckBox
+                android:id="@+id/check2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sleep Apnea"
+                android:textColor="#ffffff"/>
+
+            <CheckBox
+                android:id="@+id/check3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Insomnia"
+                android:textColor="#ffffff"/>
+
+            <CheckBox
+                android:id="@+id/check4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Restless Leg Syndrome (RLS)"
+                android:textColor="#ffffff"/>
+        <CheckBox
+            android:id="@+id/check5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Narcolepsy"
+            android:textColor="#ffffff"/>
+
+        <CheckBox
+            android:id="@+id/check6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Circadian Rhythm Disorders"
+            android:textColor="#ffffff"/>
+
+        <CheckBox
+            android:id="@+id/check7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chronic Fatigue Syndrome"
+            android:textColor="#ffffff"/>
+
+        <CheckBox
+            android:id="@+id/check8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Night Terrors"
+            android:textColor="#ffffff"/>
+        <CheckBox
+            android:id="@+id/check9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            android:textColor="#ffffff"/>
 
     </LinearLayout>
 </ScrollView>
