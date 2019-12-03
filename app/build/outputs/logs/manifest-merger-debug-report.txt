@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:2:1-24:12
+ADDED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:2:1-28:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/3de2523a0f51d26ee2136414a016e120/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-ui:2.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/dcba522802bcdbbd47f990dc04d13abf/jetified-navigation-ui-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/9d6f0c6ce1072e080bd324ee1d6f3685/material-1.0.0/AndroidManifest.xml:17:1-24:12
@@ -43,20 +43,20 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/Cattaline/.gradle/
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/e048c4e102a212c6d1b548850e150ece/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/beddc53abac9986edefbca79333cfe3f/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/340a5d61c0f00d39591ddacd23d0e8e7/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:2:1-28:12
 	package
 		ADDED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:3:5-39
 		INJECTED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:2:1-24:12
+		ADDED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:2:1-28:12
 		INJECTED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:2:1-24:12
+		ADDED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:2:1-28:12
 		INJECTED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:2:11-69
@@ -65,7 +65,7 @@ ADDED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:5:
 	android:name
 		ADDED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:6:5-22:19
+ADDED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:6:5-26:19
 MERGED from [com.google.android.material:material:1.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/9d6f0c6ce1072e080bd324ee1d6f3685/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/9d6f0c6ce1072e080bd324ee1d6f3685/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/9094f338ba92479808ec41e819f57533/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
@@ -108,6 +108,12 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:19:17-77
 	android:name
 		ADDED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:19:27-74
+activity#com.example.cmsc434_ga06.UserInfoActivity
+ADDED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:22:9-25:20
+	android:label
+		ADDED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:24:13-45
+	android:name
+		ADDED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:23:13-45
 uses-sdk
 INJECTED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml

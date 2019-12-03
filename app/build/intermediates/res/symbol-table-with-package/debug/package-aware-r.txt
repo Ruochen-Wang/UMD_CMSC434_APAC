@@ -1076,6 +1076,8 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id age
+id age_text
 id alarm2info
 id alarm2night
 id alertTitle
@@ -1092,12 +1094,22 @@ id center
 id center_horizontal
 id center_vertical
 id chains
+id check1
+id check2
+id check3
+id check4
+id check5
+id check6
+id check7
+id check8
+id check9
 id checkbox
 id chronometer
 id clip_horizontal
 id clip_vertical
 id collapseActionView
 id coln
+id conditions_text
 id container
 id content
 id contentPanel
@@ -1128,6 +1140,7 @@ id fill_vertical
 id filled
 id fixed
 id forever
+id gender_text
 id ghost_view
 id gone
 id group_divider
@@ -1159,6 +1172,7 @@ id mobile_navigation
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id name
 id nav_controller_view_tag
 id nav_host_fragment
 id nav_view
@@ -1167,6 +1181,7 @@ id navigation_header_container
 id navigation_home
 id navigation_notifications
 id never
+id no
 id none
 id normal
 id notification_background
@@ -1184,6 +1199,11 @@ id popup
 id progress_circular
 id progress_horizontal
 id radio
+id radio1
+id radio2
+id radio3
+id radio4
+id radioGroup
 id right
 id right_icon
 id right_side
@@ -1228,6 +1248,7 @@ id src_over
 id standard
 id start
 id stretch
+id student_text
 id submenuarrow
 id submit_area
 id tabMode
@@ -1269,6 +1290,7 @@ id visible
 id withText
 id wrap
 id wrap_content
+id yes
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -1316,9 +1338,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_info
 layout activity_main
-layout activity_primary_task
+layout activity_primary
+layout activity_secondary
+layout activity_third
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1416,6 +1439,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string project_id
+string prompt_name
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_dashboard

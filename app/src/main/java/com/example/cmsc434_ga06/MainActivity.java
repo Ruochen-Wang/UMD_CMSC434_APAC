@@ -17,8 +17,8 @@ import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button infoButton = findViewById(R.id.alarm2info);
-    Button nightsButton = findViewById(R.id.alarm2night);
+    //Button infoButton = findViewById(R.id.alarm2info);
+    //Button nightsButton = findViewById(R.id.alarm2night);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,21 +34,21 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
 
-        infoButton.setOnClickListener(new View.OnClickListener() {
+        /*infoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent infoIntent = new Intent(getApplicationContext(), UserInfoActivity.class);
                 startActivity(infoIntent);
             }
-        });
+        });*/
 
-        nightsButton.setOnClickListener(new View.OnClickListener() {
+        /*nightsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent nightsIntent = new Intent(getApplicationContext(), NightsActivity.class);
                 startActivity(nightsIntent);
             }
-        });
+        });*/
     }
 
 
