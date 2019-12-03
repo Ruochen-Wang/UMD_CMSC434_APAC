@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrimaryTask"
+    android:background="#ff002547">
+
+    <Button
+        android:id="@+id/time_format_sw"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="261dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="180dp"
+        android:backgroundTint="#808090"
+        android:onClick="time_format"
+        android:text="12/24 hr"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/min_input"
+        android:layout_width="150dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textAlignment="center"
+        android:textColor="#F3DEA7"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_format_sw" />
+
+    <EditText
+        android:id="@+id/hr_input"
+        android:layout_width="151dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="37dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textAlignment="center"
+        android:textColor="#F3DEA7"
+        android:textColorLink="#F3DEA7"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_format_sw" />
+
+    <TextView
+        android:id="@+id/coln"
+        android:layout_width="16dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="60dp"
+        android:text=":"
+        android:textColor="#FFFCFC"
+        android:textSize="60dp"
+        app:fontFamily="serif"
+        app:layout_constraintEnd_toStartOf="@+id/min_input"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toEndOf="@+id/hr_input"
+        app:layout_constraintTop_toBottomOf="@+id/time_format_sw" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="225dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:text="Set My Alarm"
+        android:textColor="#F3DEA7"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/alarm2info"
+
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/activity_btn"
+        android:onClick="toInfo"
+        android:text="my info"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/alarm2night"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/activity_btn"
+        android:text="my nights"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:onClick="tonights"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/set"
+        android:layout_width="236dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:text="SET"
+        android:backgroundTint="#808090"
+        android:textSize="22sp"
+        android:onClick="set_alarm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hr_input" />
+
+    <RelativeLayout
+        android:id="@+id/dim_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C0000000"
+        android:visibility="gone" >
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
