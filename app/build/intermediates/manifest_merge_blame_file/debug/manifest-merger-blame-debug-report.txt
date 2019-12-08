@@ -14,60 +14,211 @@
 11-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:5:5-66
 11-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:5:22-64
 12
-13    <application
-13-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:6:5-26:19
-14        android:name="androidx.multidex.MultiDexApplication"
-15        android:allowBackup="true"
-15-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:7:9-35
-16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.0.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/333f0d9d4a1f85c204c46ee8a3138529/core-1.0.1/AndroidManifest.xml:22:18-86
-17        android:debuggable="true"
-18        android:icon="@mipmap/ic_launcher"
-18-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:8:9-43
-19        android:label="@string/app_name"
-19-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:9:9-41
-20        android:roundIcon="@mipmap/ic_launcher_round"
-20-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:10:9-54
-21        android:supportsRtl="true"
-21-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:11:9-35
-22        android:testOnly="true"
-23        android:theme="@style/AppTheme" >
-23-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:12:9-40
-24        <activity
-24-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:13:9-21:20
-25            android:name="com.example.cmsc434_ga06.MainActivity"
-25-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:14:13-41
-26            android:label="@string/app_name" >
-26-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:15:13-45
-27            <intent-filter>
-27-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:16:13-20:29
-28                <action android:name="android.intent.action.MAIN" />
-28-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:17:17-69
-28-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:17:25-66
-29
-30                <category android:name="android.intent.category.LAUNCHER" />
-30-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:19:17-77
-30-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:19:27-74
-31            </intent-filter>
-32        </activity>
-33        <activity
-33-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:22:9-25:20
-34            android:name="com.example.cmsc434_ga06.UserInfoActivity"
-34-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:23:13-45
-35            android:label="@string/app_name" >
-35-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:24:13-45
-36        </activity>
-37
-38        <provider
-38-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/d51ef79d5bed4b462622d5a2c6633dfb/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
-39            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-39-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/d51ef79d5bed4b462622d5a2c6633dfb/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
-40            android:authorities="com.example.cmsc434_ga06.lifecycle-process"
-40-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/d51ef79d5bed4b462622d5a2c6633dfb/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
-41            android:exported="false"
-41-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/d51ef79d5bed4b462622d5a2c6633dfb/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
-42            android:multiprocess="true" />
-42-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/d51ef79d5bed4b462622d5a2c6633dfb/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
-43    </application>
-44
-45</manifest>
+13    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+14    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[com.google.firebase:firebase-firestore:21.3.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/06ffcd6f61a77a2aeebd7d017105f03e/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:13:5-79
+15-->[com.google.firebase:firebase-firestore:21.3.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/06ffcd6f61a77a2aeebd7d017105f03e/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:13:22-76
+16    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+16-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/9477b8b7d3dd4ca1c2a196af0518f2f2/play-services-measurement-api-17.2.1/AndroidManifest.xml:24:5-68
+16-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/9477b8b7d3dd4ca1c2a196af0518f2f2/play-services-measurement-api-17.2.1/AndroidManifest.xml:24:22-65
+17    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+17-->[com.google.firebase:firebase-iid:19.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/f1aa6e18467c20f571460c2bb43c33e5/firebase-iid-19.0.0/AndroidManifest.xml:26:5-82
+17-->[com.google.firebase:firebase-iid:19.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/f1aa6e18467c20f571460c2bb43c33e5/firebase-iid-19.0.0/AndroidManifest.xml:26:22-79
+18    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+18-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:26:5-110
+18-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:26:22-107
+19
+20    <application
+20-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:6:5-26:19
+21        android:name="androidx.multidex.MultiDexApplication"
+22        android:allowBackup="true"
+22-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:7:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.0.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/576da1d0dffd769126e261a00deab8bb/core-1.0.1/AndroidManifest.xml:22:18-86
+24        android:debuggable="true"
+25        android:icon="@mipmap/ic_launcher"
+25-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:8:9-43
+26        android:label="@string/app_name"
+26-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:9:9-41
+27        android:roundIcon="@mipmap/ic_launcher_round"
+27-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:10:9-54
+28        android:supportsRtl="true"
+28-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:11:9-35
+29        android:theme="@style/AppTheme" >
+29-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:12:9-40
+30        <activity
+30-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:13:9-21:20
+31            android:name="com.example.cmsc434_ga06.MainActivity"
+31-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:14:13-41
+32            android:label="@string/app_name" >
+32-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:15:13-45
+33            <intent-filter>
+33-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:16:13-20:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:17:17-69
+34-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:17:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:19:17-77
+36-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:19:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity
+39-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:22:9-25:20
+40            android:name="com.example.cmsc434_ga06.UserInfoActivity"
+40-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:23:13-45
+41            android:label="@string/app_name" >
+41-->/Users/Cattaline/UMD_CMSC434_APAC/app/src/main/AndroidManifest.xml:24:13-45
+42        </activity>
+43        <activity
+43-->[com.google.firebase:firebase-auth:19.2.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/db9fd4181921fcb933d270f5edbcb02d/firebase-auth-19.2.0/AndroidManifest.xml:24:9-31:50
+44            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+44-->[com.google.firebase:firebase-auth:19.2.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/db9fd4181921fcb933d270f5edbcb02d/firebase-auth-19.2.0/AndroidManifest.xml:25:13-85
+45            android:excludeFromRecents="true"
+45-->[com.google.firebase:firebase-auth:19.2.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/db9fd4181921fcb933d270f5edbcb02d/firebase-auth-19.2.0/AndroidManifest.xml:26:13-46
+46            android:exported="true"
+46-->[com.google.firebase:firebase-auth:19.2.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/db9fd4181921fcb933d270f5edbcb02d/firebase-auth-19.2.0/AndroidManifest.xml:27:13-36
+47            android:launchMode="singleTask"
+47-->[com.google.firebase:firebase-auth:19.2.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/db9fd4181921fcb933d270f5edbcb02d/firebase-auth-19.2.0/AndroidManifest.xml:28:13-44
+48            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+48-->[com.google.firebase:firebase-auth:19.2.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/db9fd4181921fcb933d270f5edbcb02d/firebase-auth-19.2.0/AndroidManifest.xml:29:13-102
+49            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+49-->[com.google.firebase:firebase-auth:19.2.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/db9fd4181921fcb933d270f5edbcb02d/firebase-auth-19.2.0/AndroidManifest.xml:30:13-72
+50
+51        <service
+51-->[com.google.firebase:firebase-auth:19.2.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/db9fd4181921fcb933d270f5edbcb02d/firebase-auth-19.2.0/AndroidManifest.xml:33:9-39:19
+52            android:name="com.google.firebase.components.ComponentDiscoveryService"
+52-->[com.google.firebase:firebase-auth:19.2.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/db9fd4181921fcb933d270f5edbcb02d/firebase-auth-19.2.0/AndroidManifest.xml:34:13-84
+53            android:directBootAware="true"
+53-->[com.google.firebase:firebase-common:19.3.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/0d8d08e35c34b8d28d3aac1cef526f7a/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+54            android:exported="false" >
+54-->[com.google.firebase:firebase-auth:19.2.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/db9fd4181921fcb933d270f5edbcb02d/firebase-auth-19.2.0/AndroidManifest.xml:35:13-37
+55            <meta-data
+55-->[com.google.firebase:firebase-auth:19.2.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/db9fd4181921fcb933d270f5edbcb02d/firebase-auth-19.2.0/AndroidManifest.xml:36:13-38:85
+56                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+56-->[com.google.firebase:firebase-auth:19.2.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/db9fd4181921fcb933d270f5edbcb02d/firebase-auth-19.2.0/AndroidManifest.xml:37:17-109
+57                android:value="com.google.firebase.components.ComponentRegistrar" />
+57-->[com.google.firebase:firebase-auth:19.2.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/db9fd4181921fcb933d270f5edbcb02d/firebase-auth-19.2.0/AndroidManifest.xml:38:17-82
+58            <meta-data
+58-->[com.google.firebase:firebase-firestore:21.3.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/06ffcd6f61a77a2aeebd7d017105f03e/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:20:13-22:85
+59                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+59-->[com.google.firebase:firebase-firestore:21.3.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/06ffcd6f61a77a2aeebd7d017105f03e/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:21:17-111
+60                android:value="com.google.firebase.components.ComponentRegistrar" />
+60-->[com.google.firebase:firebase-firestore:21.3.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/06ffcd6f61a77a2aeebd7d017105f03e/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:22:17-82
+61            <meta-data
+61-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/9477b8b7d3dd4ca1c2a196af0518f2f2/play-services-measurement-api-17.2.1/AndroidManifest.xml:30:13-32:85
+62                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+62-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/9477b8b7d3dd4ca1c2a196af0518f2f2/play-services-measurement-api-17.2.1/AndroidManifest.xml:31:17-139
+63                android:value="com.google.firebase.components.ComponentRegistrar" />
+63-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/9477b8b7d3dd4ca1c2a196af0518f2f2/play-services-measurement-api-17.2.1/AndroidManifest.xml:32:17-82
+64            <meta-data
+64-->[com.google.firebase:firebase-iid:19.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/f1aa6e18467c20f571460c2bb43c33e5/firebase-iid-19.0.0/AndroidManifest.xml:32:13-34:85
+65                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+65-->[com.google.firebase:firebase-iid:19.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/f1aa6e18467c20f571460c2bb43c33e5/firebase-iid-19.0.0/AndroidManifest.xml:33:17-96
+66                android:value="com.google.firebase.components.ComponentRegistrar" />
+66-->[com.google.firebase:firebase-iid:19.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/f1aa6e18467c20f571460c2bb43c33e5/firebase-iid-19.0.0/AndroidManifest.xml:34:17-82
+67        </service>
+68
+69        <receiver
+69-->[com.google.firebase:firebase-iid:19.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/f1aa6e18467c20f571460c2bb43c33e5/firebase-iid-19.0.0/AndroidManifest.xml:37:9-44:20
+70            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+70-->[com.google.firebase:firebase-iid:19.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/f1aa6e18467c20f571460c2bb43c33e5/firebase-iid-19.0.0/AndroidManifest.xml:38:13-78
+71            android:exported="true"
+71-->[com.google.firebase:firebase-iid:19.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/f1aa6e18467c20f571460c2bb43c33e5/firebase-iid-19.0.0/AndroidManifest.xml:39:13-36
+72            android:permission="com.google.android.c2dm.permission.SEND" >
+72-->[com.google.firebase:firebase-iid:19.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/f1aa6e18467c20f571460c2bb43c33e5/firebase-iid-19.0.0/AndroidManifest.xml:40:13-73
+73            <intent-filter>
+73-->[com.google.firebase:firebase-iid:19.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/f1aa6e18467c20f571460c2bb43c33e5/firebase-iid-19.0.0/AndroidManifest.xml:41:13-43:29
+74                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+74-->[com.google.firebase:firebase-iid:19.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/f1aa6e18467c20f571460c2bb43c33e5/firebase-iid-19.0.0/AndroidManifest.xml:42:17-81
+74-->[com.google.firebase:firebase-iid:19.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/f1aa6e18467c20f571460c2bb43c33e5/firebase-iid-19.0.0/AndroidManifest.xml:42:25-78
+75            </intent-filter>
+76        </receiver>
+77
+78        <activity
+78-->[com.google.android.gms:play-services-base:17.1.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/fc9a8d5df99331dac9a5fdc49a7080c6/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+79            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+79-->[com.google.android.gms:play-services-base:17.1.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/fc9a8d5df99331dac9a5fdc49a7080c6/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+80            android:exported="false"
+80-->[com.google.android.gms:play-services-base:17.1.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/fc9a8d5df99331dac9a5fdc49a7080c6/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+81            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+81-->[com.google.android.gms:play-services-base:17.1.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/fc9a8d5df99331dac9a5fdc49a7080c6/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+82
+83        <receiver
+83-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:29:9-33:20
+84            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+84-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:30:13-85
+85            android:enabled="true"
+85-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:31:13-35
+86            android:exported="false" >
+86-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:32:13-37
+87        </receiver>
+88        <receiver
+88-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:34:9-42:20
+89            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+89-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:35:13-100
+90            android:enabled="true"
+90-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:36:13-35
+91            android:exported="true"
+91-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:37:13-36
+92            android:permission="android.permission.INSTALL_PACKAGES" >
+92-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:38:13-69
+93            <intent-filter>
+93-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:39:13-41:29
+94                <action android:name="com.android.vending.INSTALL_REFERRER" />
+94-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:40:17-79
+94-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:40:25-76
+95            </intent-filter>
+96        </receiver>
+97
+98        <service
+98-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:44:9-47:40
+99            android:name="com.google.android.gms.measurement.AppMeasurementService"
+99-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:45:13-84
+100            android:enabled="true"
+100-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:46:13-35
+101            android:exported="false" />
+101-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:47:13-37
+102        <service
+102-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:48:9-52:72
+103            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+103-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:49:13-87
+104            android:enabled="true"
+104-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:50:13-35
+105            android:exported="false"
+105-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:51:13-37
+106            android:permission="android.permission.BIND_JOB_SERVICE" />
+106-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/efdfb2ff9ac9748ae74b5e83df955089/play-services-measurement-17.2.1/AndroidManifest.xml:52:13-69
+107
+108        <provider
+108-->[com.google.firebase:firebase-common:19.3.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/0d8d08e35c34b8d28d3aac1cef526f7a/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+109            android:name="com.google.firebase.provider.FirebaseInitProvider"
+109-->[com.google.firebase:firebase-common:19.3.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/0d8d08e35c34b8d28d3aac1cef526f7a/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+110            android:authorities="com.example.cmsc434_ga06.firebaseinitprovider"
+110-->[com.google.firebase:firebase-common:19.3.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/0d8d08e35c34b8d28d3aac1cef526f7a/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+111            android:exported="false"
+111-->[com.google.firebase:firebase-common:19.3.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/0d8d08e35c34b8d28d3aac1cef526f7a/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+112            android:initOrder="100" />
+112-->[com.google.firebase:firebase-common:19.3.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/0d8d08e35c34b8d28d3aac1cef526f7a/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+113
+114        <meta-data
+114-->[com.google.android.gms:play-services-basement:17.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/5884965b057f923e72c8e282e3a9b61d/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+115            android:name="com.google.android.gms.version"
+115-->[com.google.android.gms:play-services-basement:17.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/5884965b057f923e72c8e282e3a9b61d/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+116            android:value="@integer/google_play_services_version" />
+116-->[com.google.android.gms:play-services-basement:17.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/5884965b057f923e72c8e282e3a9b61d/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+117
+118        <provider
+118-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/6e28ecc30ee98649e31bce5df37ebddd/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+119            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+119-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/6e28ecc30ee98649e31bce5df37ebddd/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+120            android:authorities="com.example.cmsc434_ga06.lifecycle-process"
+120-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/6e28ecc30ee98649e31bce5df37ebddd/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+121            android:exported="false"
+121-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/6e28ecc30ee98649e31bce5df37ebddd/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+122            android:multiprocess="true" />
+122-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/Cattaline/.gradle/caches/transforms-2/files-2.1/6e28ecc30ee98649e31bce5df37ebddd/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+123    </application>
+124
+125</manifest>
