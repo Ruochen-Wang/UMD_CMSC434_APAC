@@ -1197,6 +1197,7 @@ id ghost_view
 id gone
 id group_divider
 id groups
+id history_btn
 id home
 id homeAsUp
 id hr_input
@@ -1329,6 +1330,7 @@ id textView
 id textView2
 id textView3
 id textView4
+id textView5
 id text_dashboard
 id text_home
 id text_input_password_toggle
@@ -1450,6 +1452,7 @@ layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout popup
+layout popup_history
 layout popup_window
 layout select_dialog_item_material
 layout select_dialog_multichoice_material

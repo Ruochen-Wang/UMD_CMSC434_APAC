@@ -89,8 +89,8 @@
 
     <Button
         android:id="@+id/alarm2night"
-        android:layout_width="168dp"
-        android:layout_height="70dp"
+        android:layout_width="179dp"
+        android:layout_height="74dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginBottom="38dp"

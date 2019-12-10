@@ -9,6 +9,19 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="170dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:text="Last Night"
+        android:textColor="#F3DEA7"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/textView3"
         android:layout_width="150dp"
         android:layout_height="39dp"
@@ -24,18 +37,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="170dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="20dp"
-        android:text="Last Night"
-        android:textColor="#F3DEA7"
-        android:textSize="36sp"
+
+    <Button
+        android:id="@+id/sleep_score"
+        android:layout_width="54dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginBottom="71dp"
+        android:onClick="onButtonShowPopupWindowClick"
+        android:text="92"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/night2alarm"
@@ -70,26 +87,26 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="415dp"
-        android:layout_height="272dp"
+        android:layout_height="250dp"
         android:src="@drawable/graph"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView"></ImageView>
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.453"></ImageView>
 
     <Button
-        android:id="@+id/sleep_score"
+        android:id="@+id/history_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="43dp"
-        android:layout_marginEnd="68dp"
-        android:layout_marginRight="68dp"
-        android:layout_marginBottom="77dp"
-        android:onClick="onButtonShowPopupWindowClick"
-        android:text="92"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        android:layout_marginTop="27dp"
+        android:onClick="historyPopUp"
+        android:text="Sleep History"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

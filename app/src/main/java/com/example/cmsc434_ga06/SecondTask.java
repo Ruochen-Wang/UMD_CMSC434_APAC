@@ -69,4 +69,28 @@ public class SecondTask extends AppCompatActivity {
             }
         });
     }
+
+    public void historyPopUp(View view) {
+        LayoutInflater layoutInflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
+        View popUpView = layoutInflater.inflate(R.layout.popup_history, null);
+
+        // create the popup window
+        int width = LinearLayout.LayoutParams.WRAP_CONTENT;
+        int height = LinearLayout.LayoutParams.WRAP_CONTENT;
+
+        final PopupWindow popUpWindow = new PopupWindow(popUpView, width, height, true);
+
+        popUpWindow.showAtLocation(view, Gravity.CENTER, 0, 0);
+
+        // dismiss the popup window when touched
+        popUpView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                popUpWindow.dismiss();
+                return true;
+            }
+        });
+
+    }
+
 }
