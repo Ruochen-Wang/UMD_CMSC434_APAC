@@ -1,7 +1,10 @@
-#Tue Dec 03 09:39:10 EST 2019
-base.0=/Users/Cattaline/UMD_CMSC434_APAC/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
+#Tue Dec 10 14:06:12 EST 2019
+path.2=classes2.dex
 path.1=classes.dex
-renamed.1=classes2.dex
 path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
+base.2=/Users/Cattaline/UMD_CMSC434_APAC/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes2.dex
 base.1=/Users/Cattaline/UMD_CMSC434_APAC/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
+base.0=/Users/Cattaline/UMD_CMSC434_APAC/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex

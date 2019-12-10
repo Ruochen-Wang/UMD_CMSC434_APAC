@@ -1,13 +1,9 @@
 package com.example.cmsc434_ga06;
 
-import android.content.Intent;
-import android.net.Uri;
+
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -17,13 +13,11 @@ import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
 
-    //Button infoButton = findViewById(R.id.alarm2info);
-    //Button nightsButton = findViewById(R.id.alarm2night);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        /*
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -32,23 +26,7 @@ public class MainActivity extends AppCompatActivity {
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-        NavigationUI.setupWithNavController(navView, navController);
-
-        /*infoButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent infoIntent = new Intent(getApplicationContext(), UserInfoActivity.class);
-                startActivity(infoIntent);
-            }
-        });*/
-
-        /*nightsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent nightsIntent = new Intent(getApplicationContext(), NightsActivity.class);
-                startActivity(nightsIntent);
-            }
-        });*/
+        NavigationUI.setupWithNavController(navView, navController);*/
     }
 
 

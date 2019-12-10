@@ -16,7 +16,7 @@ public class PrimaryTask extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_primary);
+        setContentView(R.layout.activity_primary_task24);
     }
 
     // pop up window when hit SET button
