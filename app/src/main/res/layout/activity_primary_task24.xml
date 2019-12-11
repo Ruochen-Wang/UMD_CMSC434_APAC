@@ -9,23 +9,6 @@
     tools:context=".PrimaryTask24Hour">
 
     <EditText
-        android:id="@+id/min_input"
-        android:layout_width="150dp"
-        android:layout_height="116dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:backgroundTint="@color/cardview_light_background"
-        android:ems="10"
-        android:inputType="number"
-        android:maxLength="2"
-        android:textAlignment="center"
-        android:textColor="#F3DEA7"
-        android:textSize="36sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
         android:id="@+id/hr_input"
         android:layout_width="151dp"
         android:layout_height="115dp"
@@ -38,9 +21,28 @@
         android:maxLength="2"
         android:textAlignment="center"
         android:textColor="#F3DEA7"
-        android:textColorLink="#F3DEA7"
+        android:textCursorDrawable="@null"
         android:textSize="36sp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/min_input"
+        android:layout_width="150dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textAlignment="center"
+        android:textColor="#F3DEA7"
+        android:textCursorDrawable="@null"
+        android:textSize="36sp"
+        android:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -51,7 +53,7 @@
         android:text=":"
         android:textColor="#FFFCFC"
         android:textSize="60dp"
-        app:fontFamily="serif"
+        android:fontFamily="casual"
         app:layout_constraintEnd_toStartOf="@+id/min_input"
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toEndOf="@+id/hr_input"
@@ -59,9 +61,10 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="225dp"
-        android:layout_height="51dp"
+        android:layout_width="247dp"
+        android:layout_height="60dp"
         android:layout_marginTop="20dp"
+        android:fontFamily="casual"
         android:text=" Set My Alarm"
         android:textColor="#F3DEA7"
         android:textSize="36sp"
@@ -74,14 +77,15 @@
         android:id="@+id/alarm2info"
         android:layout_width="157dp"
         android:layout_height="71dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/activity_btn"
+        android:fontFamily="casual"
         android:text="Personal Data"
         android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="22sp"
+        android:textColor="#e0e0e0"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -89,14 +93,15 @@
         android:id="@+id/alarm2night"
         android:layout_width="179dp"
         android:layout_height="74dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="38dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/activity_btn"
+        android:fontFamily="casual"
         android:text="Sleeping Data"
         android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="22sp"
+        android:textColor="#e0e0e0"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -105,10 +110,11 @@
         android:layout_width="236dp"
         android:layout_height="48dp"
         android:layout_marginTop="390dp"
-        android:backgroundTint="#808090"
+        android:fontFamily="casual"
         android:onClick="set_alarm"
         android:text="SET"
-        android:textSize="22sp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -127,6 +133,7 @@
         android:layout_marginTop="100dp"
         android:text="Change to 12 hour mode"
         android:textColor="@color/colorPrimary"
+        android:fontFamily="casual"
         app:layout_constraintEnd_toStartOf="@+id/min_input"
         app:layout_constraintStart_toEndOf="@+id/hr_input"
         app:layout_constraintTop_toTopOf="parent" />

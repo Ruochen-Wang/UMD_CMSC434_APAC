@@ -3,7 +3,7 @@
     android:id="@+id/popup"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="#cff1806f">
+    android:background="#cf326fa8">
 
     <TextView
         android:layout_width="wrap_content"

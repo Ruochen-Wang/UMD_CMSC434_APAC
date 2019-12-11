@@ -27,11 +27,14 @@
             android:layout_marginTop="50dp"
             android:layout_marginEnd="24dp"
             android:autofillHints="@string/prompt_name"
+            android:backgroundTint="@color/cardview_light_background"
             android:hint="@string/prompt_name"
             android:inputType="textShortMessage"
             android:selectAllOnFocus="true"
             android:textColor="#ffffff"
             android:textColorHint="#ffffff"
+            android:textCursorDrawable="@null"
+            android:fontFamily="casual"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -39,89 +42,109 @@
 
         <TextView
             android:id="@+id/age_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
+            android:layout_width="89dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="130dp"
             android:text="Age:"
             android:textColor="#F3DEA7"
-            android:textSize="36sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.143"
+            android:textSize="32sp"
+            android:fontFamily="casual"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/age"
             android:layout_width="245dp"
-            android:layout_height="54dp"
-            android:layout_marginTop="28dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/cardview_light_background"
+            android:fontFamily="casual"
             android:inputType="number"
             android:selectAllOnFocus="true"
             android:textColor="#ffffff"
             android:textColorHint="#ffffff"
+            android:textCursorDrawable="@null"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/age_text"
-            app:layout_constraintTop_toBottomOf="@+id/name" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/gender_text"
-            android:layout_width="225dp"
-            android:layout_height="51dp"
+            android:layout_width="310dp"
+            android:layout_height="56dp"
             android:layout_marginTop="20dp"
             android:text="Gender:"
             android:textColor="#F3DEA7"
-            android:textSize="36sp"
+            android:textSize="32sp"
+            android:fontFamily="casual"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.275"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/age" />
+            app:layout_constraintTop_toBottomOf="@+id/age_text" />
 
         <RadioGroup
             android:id="@+id/radioGroup"
             android:layout_width="243dp"
             android:layout_height="120dp"
-            tools:layout_editor_absoluteX="61dp"
-            tools:layout_editor_absoluteY="489dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/gender_text">
+            app:layout_constraintTop_toBottomOf="@+id/gender_text"
+            tools:layout_editor_absoluteX="61dp"
+            tools:layout_editor_absoluteY="489dp">
 
             <RadioButton
                 android:id="@+id/radio1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:buttonTint="#e0e0e0"
                 android:text="Male"
-                android:textColor="#ffffff"/>
+                android:textColor="#ffffff"
+                android:fontFamily="casual"/>
 
             <RadioButton
                 android:id="@+id/radio2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:buttonTint="#e0e0e0"
                 android:text="Female"
-                android:textColor="#ffffff"/>
+                android:textColor="#ffffff"
+                android:fontFamily="casual"/>
 
             <RadioButton
                 android:id="@+id/radio3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:buttonTint="#e0e0e0"
                 android:text="Other"
-                android:textColor="#ffffff"/>
+                android:textColor="#ffffff"
+                android:fontFamily="casual"/>
 
             <RadioButton
                 android:id="@+id/radio4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:buttonTint="#e0e0e0"
                 android:text="Prefer Not to Say"
-                android:textColor="#ffffff"/>
+                android:textColor="#ffffff"
+                android:fontFamily="casual"/>
         </RadioGroup>
 
         <TextView
             android:id="@+id/student_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="310dp"
+            android:layout_height="56dp"
             android:layout_marginTop="20dp"
             android:text="Are you a student?"
             android:textColor="#F3DEA7"
-            android:textSize="36sp"
+            android:textSize="32sp"
+            android:fontFamily="casual"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
@@ -131,6 +154,7 @@
             android:id="@+id/studentGroup"
             android:layout_width="243dp"
             android:layout_height="80dp"
+            android:fontFamily="casual"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/student_text"
@@ -141,6 +165,8 @@
                 android:id="@+id/yes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:buttonTint="#e0e0e0"
                 android:text="Yes"
                 android:textColor="#ffffff" />
 
@@ -148,19 +174,24 @@
                 android:id="@+id/no"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:buttonTint="#e0e0e0"
                 android:text="No"
-                android:textColor="#ffffff" />
+                android:textColor="#ffffff"
+                android:layout_marginLeft="0dp"/>
 
         </RadioGroup>
 
         <TextView
             android:id="@+id/conditions_text"
-            android:layout_width="225dp"
-            android:layout_height="51dp"
+            android:layout_width="310dp"
+            android:layout_height="56dp"
             android:layout_marginTop="20dp"
+            android:buttonTint="#e0e0e0"
             android:text="Sleep Conditions:"
             android:textColor="#F3DEA7"
-            android:textSize="36sp"
+            android:textSize="32sp"
+            android:fontFamily="casual"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
@@ -168,86 +199,125 @@
 
         <CheckBox
             android:id="@+id/check1"
-            android:layout_width="match_parent"
+            android:layout_width="310dp"
             android:layout_height="wrap_content"
+            android:buttonTint="#e0e0e0"
             android:text="Snoring"
             android:textColor="#ffffff"
-            app:layout_constraintTop_toBottomOf="@+id/conditions_text"/>
+            android:fontFamily="casual"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/conditions_text" />
 
         <CheckBox
             android:id="@+id/check2"
-            android:layout_width="match_parent"
+            android:layout_width="310dp"
             android:layout_height="wrap_content"
+            android:buttonTint="#e0e0e0"
             android:text="Sleep Apnea"
             android:textColor="#ffffff"
-            app:layout_constraintTop_toBottomOf="@+id/check1"/>
+            android:fontFamily="casual"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check1" />
 
         <CheckBox
             android:id="@+id/check3"
-            android:layout_width="match_parent"
+            android:layout_width="310dp"
             android:layout_height="wrap_content"
+            android:buttonTint="#e0e0e0"
             android:text="Insomnia"
             android:textColor="#ffffff"
-            app:layout_constraintTop_toBottomOf="@+id/check2"/>
+            android:fontFamily="casual"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check2" />
 
         <CheckBox
             android:id="@+id/check4"
-            android:layout_width="match_parent"
+            android:layout_width="310dp"
             android:layout_height="wrap_content"
+            android:buttonTint="#e0e0e0"
             android:text="Restless Leg Syndrome (RLS)"
             android:textColor="#ffffff"
-            app:layout_constraintTop_toBottomOf="@+id/check3"/>
+            android:fontFamily="casual"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check3" />
+
         <CheckBox
             android:id="@+id/check5"
-            android:layout_width="match_parent"
+            android:layout_width="310dp"
             android:layout_height="wrap_content"
+            android:buttonTint="#e0e0e0"
             android:text="Narcolepsy"
             android:textColor="#ffffff"
+            android:fontFamily="casual"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/check4" />
 
         <CheckBox
             android:id="@+id/check6"
-            android:layout_width="match_parent"
+            android:layout_width="310dp"
             android:layout_height="wrap_content"
+            android:buttonTint="#e0e0e0"
             android:text="Circadian Rhythm Disorders"
             android:textColor="#ffffff"
-            app:layout_constraintTop_toBottomOf="@+id/check5"/>
+            android:fontFamily="casual"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check5" />
 
         <CheckBox
             android:id="@+id/check7"
-            android:layout_width="match_parent"
+            android:layout_width="310dp"
             android:layout_height="wrap_content"
+            android:buttonTint="#e0e0e0"
             android:text="Chronic Fatigue Syndrome"
             android:textColor="#ffffff"
-            app:layout_constraintTop_toBottomOf="@+id/check6"/>
+            android:fontFamily="casual"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check6" />
 
         <CheckBox
             android:id="@+id/check8"
-            android:layout_width="match_parent"
+            android:layout_width="310dp"
             android:layout_height="wrap_content"
+            android:buttonTint="#e0e0e0"
             android:text="Night Terrors"
             android:textColor="#ffffff"
-            app:layout_constraintTop_toBottomOf="@+id/check7"/>
+            android:fontFamily="casual"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check7" />
+
         <CheckBox
             android:id="@+id/check9"
-            android:layout_width="match_parent"
+            android:layout_width="310dp"
             android:layout_height="wrap_content"
+            android:buttonTint="#e0e0e0"
             android:text="Other"
             android:textColor="#ffffff"
-            app:layout_constraintTop_toBottomOf="@+id/check8"/>
+            android:fontFamily="casual"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check8" />
 
         <Button
             android:id="@+id/infosave"
             android:layout_width="157dp"
             android:layout_height="50dp"
             android:layout_marginTop="56dp"
-            android:background="@drawable/activity_btn"
+            android:layout_marginBottom="120dp"
             android:onClick="saveInfo"
             android:text="Save Data"
-            android:backgroundTint="#008577"
             android:textAlignment="center"
-            android:textColor="#000000"
+            android:textColor="@color/colorPrimary"
             android:textSize="22sp"
+            android:fontFamily="casual"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
@@ -257,28 +327,32 @@
             android:id="@+id/info2night"
             android:layout_width="158dp"
             android:layout_height="64dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="56dp"
-            android:layout_marginRight="56dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/activity_btn"
+            android:fontFamily="casual"
             android:text="Sleeping Data"
             android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="22sp"
-            app:layout_constraintEnd_toStartOf="@+id/info2alarm"
-            app:layout_constraintTop_toBottomOf="@+id/infosave" />
+            android:textColor="#e0e0e0"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/info2alarm"
             android:layout_width="137dp"
             android:layout_height="64dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/activity_btn"
+            android:fontFamily="casual"
             android:text="Alarms"
             android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="22sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/infosave" />
+            android:textColor="#e0e0e0"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
