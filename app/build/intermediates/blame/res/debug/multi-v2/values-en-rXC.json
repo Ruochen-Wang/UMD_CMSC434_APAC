@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\neilw\\UMD_CMSC434_APAC\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rXC\\values-en-rXC.xml",
+            "outputFile": "/Users/tyner/AndroidStudioProjects/UMD_CMSC434_APAC/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\neilw\\.gradle\\caches\\transforms-2\\files-2.1\\576da1d0dffd769126e261a00deab8bb\\core-1.0.1\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "/Users/tyner/.gradle/caches/transforms-2/files-2.1/576da1d0dffd769126e261a00deab8bb/core-1.0.1/res/values-en-rXC/values-en-rXC.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\neilw\\.gradle\\caches\\transforms-2\\files-2.1\\3ca7664084ef6174ed0d76f6cd5121b0\\appcompat-1.0.2\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "/Users/tyner/.gradle/caches/transforms-2/files-2.1/3ca7664084ef6174ed0d76f6cd5121b0/appcompat-1.0.2/res/values-en-rXC/values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

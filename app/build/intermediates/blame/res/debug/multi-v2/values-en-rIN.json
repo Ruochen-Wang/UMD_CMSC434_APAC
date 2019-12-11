@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\neilw\\UMD_CMSC434_APAC\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
+            "outputFile": "/Users/tyner/AndroidStudioProjects/UMD_CMSC434_APAC/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\neilw\\.gradle\\caches\\transforms-2\\files-2.1\\20d092a0df84adc1939d9a9e6ea113ae\\jetified-navigation-ui-2.0.0\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,161",
-                        "endColumns": "105,116",
-                        "endOffsets": "156,273"
-                    },
-                    "to": {
-                        "startLines": "29,30",
-                        "startColumns": "4,4",
-                        "startOffsets": "2764,2870",
-                        "endColumns": "105,116",
-                        "endOffsets": "2865,2982"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\neilw\\.gradle\\caches\\transforms-2\\files-2.1\\3ca7664084ef6174ed0d76f6cd5121b0\\appcompat-1.0.2\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "/Users/tyner/.gradle/caches/transforms-2/files-2.1/3ca7664084ef6174ed0d76f6cd5121b0/appcompat-1.0.2/res/values-en-rIN/values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\neilw\\.gradle\\caches\\transforms-2\\files-2.1\\576da1d0dffd769126e261a00deab8bb\\core-1.0.1\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "/Users/tyner/.gradle/caches/transforms-2/files-2.1/46077f59020cdf2640d1b1c2c09b7a59/jetified-navigation-ui-2.0.0/res/values-en-rIN/values-en-rIN.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,161",
+                        "endColumns": "105,116",
+                        "endOffsets": "156,273"
+                    },
+                    "to": {
+                        "startLines": "29,30",
+                        "startColumns": "4,4",
+                        "startOffsets": "2764,2870",
+                        "endColumns": "105,116",
+                        "endOffsets": "2865,2982"
+                    }
+                },
+                {
+                    "source": "/Users/tyner/.gradle/caches/transforms-2/files-2.1/576da1d0dffd769126e261a00deab8bb/core-1.0.1/res/values-en-rIN/values-en-rIN.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
