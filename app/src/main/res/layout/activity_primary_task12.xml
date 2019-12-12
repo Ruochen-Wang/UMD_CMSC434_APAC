@@ -49,6 +49,7 @@
         android:maxLength="2"
         android:textAlignment="center"
         android:textColor="#F3DEA7"
+        android:textCursorDrawable="@null"
         android:textSize="36sp"
         android:fontFamily="sans-serif-light"
         app:layout_constraintStart_toStartOf="parent"
